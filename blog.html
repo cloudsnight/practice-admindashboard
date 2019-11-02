@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/iconfont/material-icons.css">
+  <!-- Material Dashboard -->
+  <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Materialize</title>
+</head>
+<body>
+    <div class="row" style="height: 100vh; top:0;">
+      <div id="sidebar-panel" class="col l2 m2 hide-on-small-only" style="height: 100%;">
+        <!-- Logo -->
+        <div id="logo" class="logo"><a class="white-text center"><h4>
+          cloudsnight
+        </h4></a></div>
+        <!-- Sidebar -->
+        <div id="sidebar">
+          <div class="user-view">
+            <div class="background"><img src="assets/img/card-2.jpg" alt=""></div>
+            <a id="img-profile" href="#!"><img src="assets/img/faces/avatar.jpg" alt="" class="circle"></a>
+            <a><span class="white-text">Ilona Bionica</span></a>
+            <a><span class="white-text email">ilonabionica@email.com</span></a>
+          </div>
+          <div class="collection">
+            <a href="index.html" class="collection-item"><i class="material-icons">dashboard</i> Dashboard</a>
+            <ul id="collapsible" class="collapsible">
+              <li class="active">
+                <div class="collapsible-header waves-effect waves-light" style="background-color: rgba(170,170,170,0.2);"><i class="material-icons">web</i> 
+                Blog
+              <i class="material-icons right">keyboard_arrow_down</i></div>
+                <div class="collapsible-body">
+                  <a href="blogform.html" class="collection-item waves-effect waves-light"><i class="material-icons">arrow_drop_down_circle</i> Add New Blog</a>
+                  <a href="blog.html" class="collection-item waves-effect waves-light active"><i class="material-icons">arrow_drop_down_circle</i> Show All Blog</a>
+                </div>
+              </li>
+            </ul>
+            <a href="#!" class="collection-item waves-effect waves-light"><i class="material-icons">filter</i>Categories</a>
+            <a href="#!" class="collection-item waves-effect waves-light"><i class="material-icons">comment</i>Comments</a>
+            <a href="#!" class="collection-item waves-effect waves-light"><i class="material-icons">supervisor_account</i>Users</a>
+          </div>
+        </div>
+        <div id="sidebar-img"></div>
+      </div>
+      <div id="main-panel" class="col l10 m10 s12" style="height: 100%; padding-left:0; padding-right:0;">
+        <!-- Header -->
+        <header class="main-header">
+          <!-- Navbar for all view -->
+          <nav style="background-color: #e91e63;">
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="#!" class="brand-logo left hide-on-small-only hide-on-med-only"><i class="material-icons">menu</i></a>
+                <a href="#!" class="brand-logo center hide-on-large-only">Logo</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger right hide-on-large-only hide-on-med-only"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-small-only">
+                  <!-- Dropdown Trigger -->
+                  <li>
+                    <a href="#!" class="profile-photo dropdown-trigger left waves-effect waves-light" data-target="dropdown1"><span class="white-text">Profile</span>
+                    <img src="assets/img/faces/avatar.jpg" alt="Circle Image" class="circle right">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Navbar for med view -->
+          <nav id="nav-med" class="grey darken-4 hide-on-large-only hide-on-small-only">
+              <div class="container">
+                <div class="nav-wrapper">
+                  <a id="brand-logo" href="#!" class="brand-logo left">Cloudsnight</a>
+                  <ul class="right">
+                    <li>
+                      <a href="#!" class="waves-effect waves-light"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="waves-effect waves-light"><i class="fa fa-file-text"></i> Blog</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="waves-effect waves-light"><i class="fa fa-comment"></i> Comments</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="waves-effect waves-light"><i class="fa fa-filter"></i> Categories</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="waves-effect waves-light"><i class="fa fa-user-secret"></i> Users</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+          <!-- Dropdown for profile on nav -->
+          <ul id="dropdown1" class="dropdown-content">
+              <li>
+                  <a href="#pablo" class="black-text">Me</a>
+              </li>
+              <li>
+                  <a href="#pablo" class="black-text">Settings and other stuff</a>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#pablo" class="black-text">Sign out</a></li>
+          </ul>
+
+          <!-- Sidenav content -->
+          <div id="slide-out" class="sidenav">
+            <div class="logo"><a class="white-text"><h4>
+              Cloudsnight
+              </h4></a>
+            </div>
+            <div class="user-view">
+              <div class="background"><img src="assets/img/card-2.jpg" alt=""></div>
+              <a id="img-profile" href="#!"><img src="assets/img/faces/avatar.jpg" alt="" class="circle"></a>
+              <a><span class="white-text">Ilona Bionica</span></a>
+              <a><span class="white-text email">ilonabionica@email.com</span></a>
+            </div>
+            <div class="collection">
+              <a href="index.html" class="collection-item"><i class="material-icons">dashboard</i> Dashboard</a>
+              <ul id="collapsible" class="collapsible">
+                <li class="active">
+                  <div class="collapsible-header waves-effect waves-light"><i class="material-icons">web</i> 
+                  Blog
+                <i class="material-icons right">keyboard_arrow_down</i></div>
+                  <div class="collapsible-body">
+                    <a href="blogform.html" class="collection-item waves-effect waves-light"><i class="material-icons">arrow_drop_down_circle</i> Add New Blog</a>
+                    <a href="blog.html" class="collection-item waves-effect waves-light active"><i class="material-icons">arrow_drop_down_circle</i> Show All Blog</a>
+                  </div>
+                </li>
+              </ul>
+              <a href="#!" class="collection-item waves-effect waves-light"><i class="material-icons">filter</i>Categories</a>
+              <a href="#!" class="collection-item waves-effect waves-light"><i class="material-icons">comment</i>Comments</a>
+              <a href="#!" class="collection-item waves-effect waves-light"><i class="material-icons">supervisor_account</i>Users</a>
+            </div>
+            <div id="sidebar-img"></div>
+          </div>
+        </header>
+
+        <!-- Content -->
+        <section class="section section-content">
+          <div class="container">
+            <div class="row">
+              <div class="col l12 m12 s12 purple" style="height: 100vh;">
+                ini content of blog
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="section section-footer">
+          <div class="footer-copyright">
+            <div class="container white-text">
+              © 2019 cloudsnight
+            </div>
+            <div class="right footer-icon">
+              <a href="https://www.facebook.com/uchin1993" class="white-text"><i class="fa fa-facebook-square fa-2x"></i></a>
+              <a href="https://github.com/cloudsnight10693" class="white-text"><i class="fa fa-github-square fa-2x"></i></a>
+              <a href="#!" class="white-text"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            </div>
+          </div>
+          
+        </footer>
+      </div>
+      
+    </div>
+
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/materialize/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.collapsible').collapsible();
+      $('.dropdown-trigger').dropdown();
+      $('.sidenav').sidenav({
+        closeOnClick: true
+      });
+    });
+  </script>
+</body>
+</html>

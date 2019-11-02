@@ -1,0 +1,538 @@
+/* ----------------------------------- First Move ----------------------------------------- */
+.row .col {
+  padding: 0;
+}
+
+h4{
+  margin: 0;
+}
+
+/* ----------------------------------- Sidebar Panel ----------------------------------------- */
+#sidebar-panel{
+  position: fixed;
+  background: black;
+  color: white;
+  z-index: 2;
+  overflow: hidden;
+  max-height: 100%;
+  height: 100%;
+  max-width: 100%;
+  width: 16.65%;     /* Mainkan animasi disini untuk slide da bar */
+  left: 0;
+}
+
+
+/* ----------------------------------- Sidebar Navigation ----------------------------------------- */
+#sidebar{
+  position: relative;
+  height: calc(100vh - 75px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 100%;
+  z-index: 4;
+  padding-bottom: 30px;
+}
+
+/* Sidebar backgdround Image */
+#sidebar-img{
+  background-image: url(../img/sidebar-1.jpg);
+  position: absolute;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 100%;
+  z-index: -2;
+}
+
+#sidebar-panel #logo {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#sidebar-panel #logo a h4{
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* user-view */
+#sidebar .user-view{
+  height: 200px;
+  display: block;
+  position: relative;
+  border-bottom: 1px solid azure;
+  border-top: 1px solid azure;
+}
+
+#sidebar .user-view a{
+  display: block;
+  text-align: center;
+}
+
+/* Profile background image */
+#sidebar .user-view .background{
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  height: 200px;
+  max-width: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+
+/* Img profile */
+#sidebar #img-profile img.circle{
+  height: 96px;
+  width: 96px;
+  border: 1px solid darkslategrey;
+}
+
+#sidebar #img-profile{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 3;
+  overflow: hidden;
+}
+
+/* Collection */
+#sidebar .collection{
+  border: none;
+}
+
+#sidebar .collection a{
+  color: azure;
+  opacity: 1;
+}
+
+#sidebar .collection-item {
+  display: flex;
+  background: transparent;
+  border: none;
+}
+
+#sidebar .collection-item.active{
+  background-color: #e91e63 !important;
+}
+
+#sidebar .collection-item:hover{
+  background-color: rgba(170, 170, 170, 0.2);
+}
+
+#sidebar i {
+  padding-right: 10px;
+}
+
+/* Collapsible */
+#sidebar .collapsible{
+  border: none;
+  box-shadow: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#sidebar .collapsible-header{
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px
+}
+
+#sidebar .collapsible-body{
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 5px;
+}
+
+#sidebar .collapsible-body a{
+  display: flex;
+}
+
+#sidebar .collapsible-header:hover{
+  background-color: rgba(170, 170, 170, 0.2);
+}
+
+#sidebar .collapsible-body:hover{
+  display: flex;
+}
+
+/* ----------------------------------- Main Panel ----------------------------------------- */
+#main-panel{
+  /* Mainkin animasi slide disini */
+  position: relative;
+  float: right;
+  max-width: 100%;
+  width: 83.3%;
+}
+
+/* ----------------------------------- Header ----------------------------------------- */
+.container{
+  max-width: 100%;
+  width: 95%;
+}
+
+#dropdown1{
+  top: -64px;
+  width: 16% !important;
+  left: 84% !important;
+}
+
+.nav-wrapper img{
+  width: 48px; height: 48px; border: 1px solid lightslategray;
+  margin-top: 7px;
+}
+
+.main-header span{
+  padding-right: 20px;
+}
+
+.sidebar-btn i{
+  line-height: 0 !important;
+  height: 0 !important;
+}
+
+/* ----------------------------------- sidenav ----------------------------------------- */
+.sidenav{
+  background-color: black;
+}
+
+#slide-out .logo{
+  padding: 0;
+  margin:0;
+  display: block;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+#slide-out .logo a h4{
+  padding-bottom: 11px;
+}
+
+/* user-view */
+#slide-out .user-view{
+  height: 150px;
+  display: block;
+  position: relative;
+}
+
+#slide-out .user-view a{
+  display: block;
+  text-align: center;
+}
+
+#slide-out .user-view a span{
+  padding: 0;
+}
+
+/* Sidenav background */
+#slide-out #sidebar-img{
+  background-image: url(../img/sidebar-1.jpg);
+  position: absolute;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 100%;
+  z-index: -2;
+}
+
+/* Profile background image */
+#slide-out .user-view .background{
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  height: 140px;
+  opacity: 0.6;
+}
+
+#slide-out .user-view .background img{
+  z-index: 3;
+  overflow: hidden;
+  margin:0;
+}
+
+/* Img profile */
+.sidenav .user-view .circle{
+  margin-left: 102px;
+}
+
+/* Collection */
+#slide-out .collection{
+  border: none;
+}
+
+#slide-out .collection a{
+  color: azure;
+  opacity: 1;
+}
+
+#slide-out .collection-item {
+  display: flex;
+  background: transparent;
+  border: none;
+}
+
+#slide-out .collection-item.active{
+  background-color: #e91e63 !important;
+}
+
+#slide-out .collection-item:hover{
+  background-color: rgba(170, 170, 170, 0.2);
+}
+
+#slide-out i {
+  padding-right: 10px;
+}
+
+/* Collapsible */
+#slide-out .collapsible{
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-out .collapsible-header{
+  background-color: transparent;
+  border: none;
+  padding-left: 20px;
+  color: azure;
+}
+
+#slide-out .collapsible-body{
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: transparent;
+}
+
+#slide-out .collapsible-body a{
+  display: flex;
+}
+
+#slide-out .collapsible-header:hover{
+  background-color: rgba(170, 170, 170, 0.2);
+}
+
+#slide-out .collapsible-body:hover{
+  display: flex;
+}
+
+
+/* ----------------------------------- Footer ----------------------------------------- */
+.section-footer{
+  background-color: #e91e63;
+  font-weight: bold;
+  display: block;
+}
+
+.footer-icon{
+  position: relative;
+  bottom: 25px;
+  right: 10px;
+  display: block;
+}
+
+.footer-icon i:hover{
+  font-size: 30px;
+  padding-right: 5px;
+  padding-left: 5px;
+  bottom: 3px;
+  position: relative;
+}
+
+/* ----------------------------------- Media Query ----------------------------------------- */
+@media (max-width: 992px){
+  #sidebar{
+    width: 0%;
+  }
+
+  #sidebar-panel{
+    width:0%;
+  }
+  
+  #main-panel{
+    width: 100%;
+  }
+}
+
+@media(max-width: 768px){
+  #brand-logo{
+    display: none;
+  }
+}
+
+/* Small width */
+@media(max-width: 600px){
+  .section-content .label-padding{
+    text-align: left !important;
+  }
+}
+
+/* ----------------------------------- Navbar mid view ----------------------------------------- */
+#nav-med a:hover{
+  background-color: rgba(170, 170, 170, 0.2);
+}
+
+/* ----------------------------------- Regular Form ----------------------------------------- */
+.section-content .card{
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.55);
+  border: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 6px;
+  color: #333;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  font-size: .875rem;
+}
+
+.section-content .card .card-header{
+  margin: 0 15px;
+  padding: 0;
+  position: relative;
+  z-index: 3;
+  height: 60px;
+}
+
+.section-content .card .card-icon{
+  border-radius: 3px;
+  background-color: #999;
+  padding: 20px;
+  margin-top: -20px;
+  margin-right: 15px;
+  float: left;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(233,30,99,.4);
+  background: linear-gradient(60deg,#ec407a,#d81b60);
+  color: white;
+}
+
+.section-content .card .card-title {
+  position: relative;
+  top: -4px;
+  color: #3c4858;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+.section-content .card .card-body{
+  padding: 0 30px;
+  padding-bottom: 20px;
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.section-content .card .card-body .cnr-text{
+  margin:0; 
+  padding:0; 
+  position: relative; 
+  right: 12px;
+  bottom: 8.5px;
+}
+
+/* Card text */
+.section-content .card .card-text{
+  float: none;
+  display: inline-block;
+  margin-right: 0;
+  border-radius: 3px;
+  background-color: #999;
+  padding: 15px;
+  margin-top: -20px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(233,30,99,.4);
+  background: linear-gradient(60deg,#ec407a,#d81b60);
+}
+
+.section-content .card .card-body form{
+  margin: 0;
+  display: block;
+}
+
+.section-content .card .card-footer{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: center;
+  display: block;
+  height: 56px;
+  background-color: white;
+}
+
+.section-content .btn{
+  border-radius: 3px;
+}
+
+.section-content .btn.rose{
+  color: #fff;
+  background-color: #e91e63;
+  border-color: #e91e63;
+  box-shadow: 0 2px 2px 0 rgba(233,30,99,.14), 
+  0 3px 1px -2px rgba(233,30,99,.2), 
+  0 1px 5px 0 rgba(233,30,99,.12);
+}
+
+.section-content .btn.rose:hover{
+  box-shadow: 0 14px 26px -12px rgba(233,30,99,.42), 
+  0 4px 23px 0 rgba(0,0,0,.12), 
+  0 8px 10px -5px rgba(233,30,99,.2);
+  color: #fff;
+  background-color: #ea2c6d;
+  border-color: #b8124a;
+}
+
+/* Custom Label */
+.section-content .label-padding{
+  text-align: right;
+  padding-right: 15px;
+  margin-top: 0;
+}
+
+.section-content .padding-col{
+  padding: 0 10px;
+}
+
+/* Horizontal Form */
+.horizontal-form{
+  padding-top: 30px;
+}
+
+.horizontal-form .row, .horizontal-form .input-field, .horizontal-form input{
+  margin: 0;
+  height: 50px;
+}
+
+.horizontal-form input[type=email], .horizontal-form input[type=password], .horizontal-form input[type=text]{
+  margin: 0 !important;
+  height: auto !important;
+  padding-bottom: 3px;
+}
+
+.section-content .form-control-static{
+  font-size: 15px;
+  font-weight: bold;
+  height: 25px;
+  margin:0;
+}
+
+.section-content .card .card-body .radio-btn::before, .radio-btn::after{
+  margin: 0 !important;
+  margin-top: 3px !important;
+}

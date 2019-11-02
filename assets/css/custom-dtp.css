@@ -1,0 +1,92 @@
+.datetimepicker{
+  position: relative;
+  height: 50px;
+}
+
+.collapse{
+  display: none;
+}
+
+.collapse.in{
+  display: block;
+}
+
+.bootstrap-datetimepicker-widget{
+  z-index: 3;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu{
+  padding: 4px;
+  width: 19em;
+  display: block;
+  border: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  position: absolute;
+  float: left;
+  min-width: 160px;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 4px;
+}
+
+.bootstrap-datetimepicker-widget .list-unstyled{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.bootstrap-datetimepicker-widget table{
+  width: 100%;
+  margin: 0;
+}
+
+.bootstrap-datetimepicker-widget table th.picker-switch{
+  width: 145px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.table-condensed > thead > tr > th{
+  /* padding: 1px; */
+  z-index: 1;
+  cursor: pointer;
+  height: 20px;
+  line-height: 10px;
+  font-weight: 500;
+  width: 20px;
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.datepicker-days > .table-condensed > tbody{
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
+}
+
+.table-condensed > tbody > tr{
+  height: 35px;
+  border-bottom: none;
+}
+
+.table-condensed > tbody > tr > td{
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 1;
+  width: 30px;
+}
+
+.bootstrap-datetimepicker-widget li.picker-switch{
+  text-align: center;
+  border-radius: 3px;
+  position: relative;
+}
+
+.bootstrap-datetimepicker-widget table td.active{
+  background-color: #9c27b0;
+  color: #FFFFFF;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+  border-radius: 50%;
+}
